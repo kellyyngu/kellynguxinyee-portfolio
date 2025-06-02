@@ -8,7 +8,7 @@ import portfolio2 from "@/public/portfolio2.png";
 import librarysys from "@/public/librarysys.png";
 import cellularAutomata from "@/public/cellularAutomata.png";
 import mentorApp from "@/public/mentorApp.png";
-import frogger from "@/public/frogger.png";
+import frogger from "@/public/Frogger.png";
 import galaDinner from "@/public/galaDinner.png";
 import happyUFarm from "@/public/happyUFarm.png";
 import hangman from "@/public/hangman.png";
