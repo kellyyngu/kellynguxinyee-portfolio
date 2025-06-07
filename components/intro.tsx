@@ -59,7 +59,7 @@ export default function Intro() {
       </div>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-3 text-lg font-medium mt-16"
+        className="flex flex-col sm:flex-row items-center justify-center gap-3 text-lg font-medium mt-16 mb-32"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -71,7 +71,7 @@ export default function Intro() {
           className="group bg-gray-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:bg-gray-950"
         >
           {/* px-7 py-3: Horizontal padding (1.75rem) and vertical padding (0.75rem) */}
-          Contact me here
+          Contact Me
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -80,7 +80,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          Download My Resume{" "}
           <HiDownload className="opacity-70 group-hover:translate-y-1 transition" />
         </a>
 
