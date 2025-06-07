@@ -109,6 +109,7 @@ export const projectsData = [
       "As part of a group project at the University of Nottingham, I co-developed a GPU-accelerated simulation system that visualizes 2D cellular automata on interactive 3D meshes, including spheres and toruses. The application supports multiple rule sets, adjustable simulation speeds, and a drawable grid editor for custom pattern creation. Users can interact with the simulation through 3D rotation, zoom functionality in both 2D and 3D modes, and intuitive cell manipulation via clicking or dragging. This project demonstrates advanced graphics programming, combining performance optimization with customizable visual settings and user-centric interaction design.",
     tags: ["JavaScript", "WebGL", "HTML", "CSS", "Svelte"],
     imageUrl: cellularAutomata,
+    link: "https://kellyyngu.github.io/SpectacularCellularAutomata/",
   },
   {
     title: "CS Mentoring App",

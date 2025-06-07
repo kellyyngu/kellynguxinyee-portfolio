@@ -5,13 +5,16 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & {
+  link?: string;
+};
 
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
+  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [isExpanded, setIsExpanded] = useState(false);
@@ -42,6 +45,20 @@ export default function Project({
               ? description
               : `${description.substring(0, maxDescriptionLength)}...`}
           </p>
+          {link && (
+            <span className="mt-2">
+              Check out the live version of the project{" "}
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline"
+              >
+                here
+              </a>
+              .
+            </span>
+          )}
           {description.length > maxDescriptionLength && (
             <button
               onClick={() => setIsExpanded(!isExpanded)}
