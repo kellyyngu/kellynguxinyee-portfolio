@@ -97,20 +97,6 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Online Food Ordering System",
-    description:
-      "Developed a comprehensive online food ordering system for a restaurant, including both customer and admin interfaces. The customer side features user account management, a categorized menu with detailed item information, a dynamic shopping cart, and secure checkout with payment options. The admin side allows for managing menu items, categories, orders, and user accounts. The system incorporates MySQL for data management and utilizes HTML, CSS, JavaScript, and PHP for the front-end and server-side functionalities.",
-    tags: ["HTML", "CSS", "PHP", "JavaScript", "MySQL", "PHPMyAdmin"],
-    imageUrl: bakemyday,
-  },
-  {
-    title: "Spectacular Cellular Automata",
-    description:
-      "As part of a group project at the University of Nottingham, I co-developed a GPU-accelerated simulation system that visualizes 2D cellular automata on interactive 3D meshes, including spheres and toruses. The application supports multiple rule sets, adjustable simulation speeds, and a drawable grid editor for custom pattern creation. Users can interact with the simulation through 3D rotation, zoom functionality in both 2D and 3D modes, and intuitive cell manipulation via clicking or dragging. This project demonstrates advanced graphics programming, combining performance optimization with customizable visual settings and user-centric interaction design.",
-    tags: ["JavaScript", "WebGL", "HTML", "CSS", "Svelte"],
-    imageUrl: cellularAutomata,
-  },
-  {
     title: "Personal Portfolio",
     description:
       "Designed and developed a responsive personal portfolio using React, TypeScript, Next.js, and Tailwind CSS. This dynamic portfolio showcases my projects, skills, and experiences with a modern, interactive interface. The site features a user-friendly navigation system, smooth animations powered by Framer Motion, and a customizable design that highlights my technical expertise. The project demonstrates my proficiency in creating engaging and performance-oriented web applications.",
@@ -118,11 +104,11 @@ export const projectsData = [
     imageUrl: portfolio2,
   },
   {
-    title: "HappyU Farm Java GUI Application Project",
+    title: "Spectacular Cellular Automata",
     description:
-      "As part of a team project, I developed HappyU Farm, a Java GUI application built using Java Swing and object-oriented principles. The application features an interactive interface that allows users to select and move animals using mouse drag events, including a custom-designed caterpillar graphic with smooth drag-and-drop functionality. The project demonstrated strong GUI development and creative interface design, and was awarded First-Class Honours for its technical implementation, visual appeal, and effective teamwork.",
-    tags: ["Java"],
-    imageUrl: happyUFarm,
+      "As part of a group project at the University of Nottingham, I co-developed a GPU-accelerated simulation system that visualizes 2D cellular automata on interactive 3D meshes, including spheres and toruses. The application supports multiple rule sets, adjustable simulation speeds, and a drawable grid editor for custom pattern creation. Users can interact with the simulation through 3D rotation, zoom functionality in both 2D and 3D modes, and intuitive cell manipulation via clicking or dragging. This project demonstrates advanced graphics programming, combining performance optimization with customizable visual settings and user-centric interaction design.",
+    tags: ["JavaScript", "WebGL", "HTML", "CSS", "Svelte"],
+    imageUrl: cellularAutomata,
   },
   {
     title: "CS Mentoring App",
@@ -139,11 +125,11 @@ export const projectsData = [
     imageUrl: frogger,
   },
   {
-    title: "Gala Dinner Website",
+    title: "Online Food Ordering System",
     description:
-      "As part of a team project, I contributed to the design and development of a responsive website for the Gala Dinner 2023, implementing a consistent layout and styling using an external CSS stylesheet. I developed a registration page with database integration to handle participant sign-ups and data queries, and deployed the site on a XAMPP server to ensure a functional and user-friendly experience. The project was awarded First-Class Honours for its innovative design, effective wireframing, problem-solving approach, and strong collaboration.",
-    tags: ["HTML", "CSS","PHP", "MySQL"],
-    imageUrl: galaDinner,
+      "Developed a comprehensive online food ordering system for a restaurant, including both customer and admin interfaces. The customer side features user account management, a categorized menu with detailed item information, a dynamic shopping cart, and secure checkout with payment options. The admin side allows for managing menu items, categories, orders, and user accounts. The system incorporates MySQL for data management and utilizes HTML, CSS, JavaScript, and PHP for the front-end and server-side functionalities.",
+    tags: ["HTML", "CSS", "PHP", "JavaScript", "MySQL", "PHPMyAdmin"],
+    imageUrl: bakemyday,
   },
   {
     title: "SkyRushBird Game Project",
@@ -151,6 +137,20 @@ export const projectsData = [
       "As a Software Developer in a team of six, I co-developed SkyRushBird, a dynamic Java-based game created for a software engineering group project. I contributed to the design of engaging user interfaces to enhance player interaction and implemented key gameplay functionalities such as character movement and scoring to ensure smooth and responsive performance. Additionally, I conducted thorough testing to identify and resolve bugs, improving overall stability and user experience. The project earned First-Class Honours, recognizing our creativity, technical execution, and effective collaboration.",
     tags: ["Java"],
     imageUrl: skyRushBird,
+  },
+  {
+    title: "Gala Dinner Website",
+    description:
+      "As part of a team project, I contributed to the design and development of a responsive website for the Gala Dinner 2023, implementing a consistent layout and styling using an external CSS stylesheet. I developed a registration page with database integration to handle participant sign-ups and data queries, and deployed the site on a XAMPP server to ensure a functional and user-friendly experience. The project was awarded First-Class Honours for its innovative design, effective wireframing, problem-solving approach, and strong collaboration.",
+    tags: ["HTML", "CSS", "PHP", "MySQL"],
+    imageUrl: galaDinner,
+  },
+  {
+    title: "HappyU Farm Java GUI Application Project",
+    description:
+      "As part of a team project, I developed HappyU Farm, a Java GUI application built using Java Swing and object-oriented principles. The application features an interactive interface that allows users to select and move animals using mouse drag events, including a custom-designed caterpillar graphic with smooth drag-and-drop functionality. The project demonstrated strong GUI development and creative interface design, and was awarded First-Class Honours for its technical implementation, visual appeal, and effective teamwork.",
+    tags: ["Java"],
+    imageUrl: happyUFarm,
   },
   {
     title: "Hangman Game Development Project",
