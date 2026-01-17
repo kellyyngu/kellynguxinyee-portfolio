@@ -8,9 +8,9 @@ import BackgroundEffects from "@/components/background-effects";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Kelly Ngu | Personal Portfolio",
+  title: "Kelly Ngu Xin Yee | Personal Portfolio",
   description:
-    "Kelly Ngu — Computer Science with AI student at the University of Nottingham. Interested in full-stack development, machine learning, and research-driven projects.",
+    "Kelly Ngu Xin Yee — Computer Science with AI student at the University of Nottingham. Interested in full-stack development, machine learning, and research-driven projects.",
 };
 
 export default function RootLayout({

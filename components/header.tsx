@@ -21,7 +21,7 @@ export default function Header() {
             className="flex items-center gap-2 sm:gap-3"
           >
             <Link href="/" className="text-lg font-semibold text-gray-900">
-              Kelly Ngu
+              Kelly Ngu Xin Yee
             </Link>
             <span className="hidden sm:inline text-sm text-gray-500">Computer Science with AI</span>
           </motion.div>
