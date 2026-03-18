@@ -4,7 +4,6 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import bakemyday from "@/public/bakemyday.png";
 import portfolio from "@/public/portfolio.png";
-import portfolio2 from "@/public/portfolio2.png";
 import librarysys from "@/public/librarysys.png";
 import cellularAutomata from "@/public/cellularAutomata.png";
 import mentorApp from "@/public/mentorApp.png";
@@ -15,6 +14,7 @@ import hangman from "@/public/hangman.png";
 import skyRushBird from "@/public/skyRushBird.png";
 import moniefest from "@/public/moniefest.png";
 import fyp from "@/public/fyp.png";
+import aliceInWonderland from "@/public/aliceInWonderland.png";
 
 export const links = [
   // navigation links for the header (use app routes)
@@ -53,7 +53,8 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
   },
   {
-    title: "Best Frontend Designer — Game Theory Challenge Hackathon (Tesserac AI)",
+    title:
+      "Best Frontend Designer — Game Theory Challenge Hackathon (Tesserac AI)",
     location: "Kuala Lumpur, Malaysia — Oct 2025",
     description:
       "Developed a responsive, user-centric 'Alice in Wonderland' web platform with quiz-based chapter progression, transforming classic literature into an engaging learning experience for new readers. Awarded Best Frontend Designer, selected as the top frontend project among participating universities in Malaysia for creativity, usability, and technical execution, winning RM1,500.",
@@ -167,7 +168,14 @@ export const projectsData = [
     title: "Monie Fest 2026 Website",
     description:
       "Developed a responsive event website for Monie Fest, a large-scale financial lifestyle festival focused on money, investing, and banking, attracting 25,000–30,000 attendees. Built as an individual contractor for Foodie Media and Spire Digital using React, TypeScript, and Vite with Tailwind CSS for styling. The site features event information, speaker profiles, exhibitor listings, programme schedule, event statistics, and integrated Eventbrite ticketing. Fully optimized for mobile and desktop viewing with accessible UI components.",
-    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Responsive Design", "Eventbrite"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Eventbrite",
+    ],
     imageUrl: moniefest,
     link: "https://www.monie.my/",
   },
@@ -183,7 +191,26 @@ export const projectsData = [
     description:
       "Designed and developed a responsive personal portfolio using React, TypeScript, Next.js, and Tailwind CSS. This dynamic portfolio showcases my projects, skills, and experiences with a modern, interactive interface. The site features a user-friendly navigation system, smooth animations powered by Framer Motion, and a customizable design that highlights my technical expertise. The project demonstrates my proficiency in creating engaging and performance-oriented web applications.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"],
-    imageUrl: portfolio2,
+    imageUrl: portfolio,
+    link: "https://kellynguxinyee-portfolio.vercel.app/",
+  },
+  {
+    title: "Alice in Wonderland — Interactive Story Experience",
+    description:
+      "An interactive, narrated web adaptation of Lewis Carroll’s Alice that blends readable chapters, voice narration, and lightweight mini‑games to create an engaging, accessible storybook experience. Built as a single‑page React app with TypeScript and Vite, styled with Tailwind CSS, the project focuses on responsive design, progressive enhancement (works offline via built assets), optimized media delivery, and accessible UI components for all ages.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Web Audio",
+      "Accessibility",
+      "Responsive Design",
+      "Mini‑Games",
+      "GitHub Pages",
+    ],
+    imageUrl: aliceInWonderland,
+    link: "https://kellyyngu.github.io/alice-in-wonderland/",
   },
   {
     title: "Spectacular Cellular Automata",
@@ -288,21 +315,65 @@ export const categorizedSkills = {
   softSkills: {
     title: "Soft Skills",
     icon: "💡",
-    skills: ["Communication", "Teamwork", "Problem-Solving", "Leadership", "Time Management", "Adaptability"],
+    skills: [
+      "Communication",
+      "Teamwork",
+      "Problem-Solving",
+      "Leadership",
+      "Time Management",
+      "Adaptability",
+    ],
   },
   programmingLanguages: {
     title: "Programming Languages",
     icon: "💻",
-    skills: ["Java", "C", "HTML", "CSS", "JavaScript", "PHP", "SQL", "Haskell", "Python", "TypeScript"],
+    skills: [
+      "Java",
+      "C",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "PHP",
+      "SQL",
+      "Haskell",
+      "Python",
+      "TypeScript",
+    ],
   },
   frameworks: {
     title: "Frameworks & Libraries",
     icon: "⚙️",
-    skills: ["React", "Next.js", "Vite", "Tailwind CSS", "Framer Motion", "scikit-learn", "TensorFlow", "Keras", "PyTorch", "Pandas", "NumPy", "Matplotlib", "Seaborn", "YOLO", "OpenCV"],
+    skills: [
+      "React",
+      "Next.js",
+      "Vite",
+      "Tailwind CSS",
+      "Framer Motion",
+      "scikit-learn",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "YOLO",
+      "OpenCV",
+    ],
   },
   tools: {
     title: "Software & Tools",
     icon: "🛠️",
-    skills: ["Visual Studio Code", "GitHub Desktop", "Figma", "PHPMyAdmin", "XAMPP", "Microsoft Office", "Canva", "Google Workspace", "Jira"],
+    skills: [
+      "Visual Studio Code",
+      "GitHub Desktop",
+      "Figma",
+      "PHPMyAdmin",
+      "XAMPP",
+      "Microsoft Office",
+      "Canva",
+      "Google Workspace",
+      "Jira",
+    ],
   },
 } as const;

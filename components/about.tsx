@@ -6,7 +6,12 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { educationData } from "@/lib/data";
 import Image from "next/image";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaBriefcase } from "react-icons/fa";
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+  FaBriefcase,
+} from "react-icons/fa";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -37,16 +42,16 @@ export default function About() {
           >
             <div className="relative">
               <div className="absolute -inset-2 rounded-full bg-[#d6e5ef] blur" />
-              <Image 
-                src="/kelly.jpeg" 
-                alt="Kelly" 
-                width={160} 
-                height={160} 
-                className="relative rounded-full object-cover ring-4 ring-white shadow-lg" 
+              <Image
+                src="/kelly.jpeg"
+                alt="Kelly"
+                width={160}
+                height={160}
+                className="relative rounded-full object-cover ring-4 ring-white shadow-lg"
               />
             </div>
           </motion.div>
-          
+
           <div className="flex-1">
             <motion.h3
               initial={{ opacity: 0, x: -20 }}
@@ -64,9 +69,14 @@ export default function About() {
               transition={{ delay: 0.1 }}
               className="muted-text mb-6 text-lg leading-relaxed"
             >
-              I am a Computer Science with AI student at the University of Nottingham with strong interests in
-              product engineering, machine learning, and human-centered design. I value well-structured systems,
-              clean implementation, and collaboration that turns ideas into practical solutions.
+              I am a final-year computer science student passionate about
+              building software that makes a tangible, positive impact on
+              society. I have strong interests in web and mobile development,
+              machine learning, and AI. I spend my free time exploring new
+              technologies to see how emerging tech can solve real-world
+              problems. I am always eager to tackle complex technical
+              challenges, and I am happy to connect with industry professionals
+              to find a team where I can contribute, learn, and grow.
             </motion.p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
@@ -79,8 +89,12 @@ export default function About() {
               >
                 <FaMapMarkerAlt className="text-xl text-[#0f3d5c]" />
                 <div>
-                  <div className="text-xs font-medium text-slate-500">Location</div>
-                  <div className="text-sm font-semibold text-slate-800">Malaysia</div>
+                  <div className="text-xs font-medium text-slate-500">
+                    Location
+                  </div>
+                  <div className="text-sm font-semibold text-slate-800">
+                    Malaysia
+                  </div>
                 </div>
               </motion.div>
 
@@ -93,8 +107,12 @@ export default function About() {
               >
                 <FaEnvelope className="text-xl text-[#0f3d5c]" />
                 <div>
-                  <div className="text-xs font-medium text-slate-500">Email</div>
-                  <div className="text-sm font-semibold text-slate-800">kellynxy8838@gmail.com</div>
+                  <div className="text-xs font-medium text-slate-500">
+                    Email
+                  </div>
+                  <div className="text-sm font-semibold text-slate-800">
+                    kellynxy8838@gmail.com
+                  </div>
                 </div>
               </motion.div>
 
@@ -110,8 +128,12 @@ export default function About() {
                 >
                   <FaPhone className="text-xl text-[#0f3d5c] transition-transform group-hover:scale-110" />
                   <div>
-                    <div className="text-xs font-medium text-slate-500">Phone</div>
-                    <div className="text-sm font-semibold text-slate-800">+60 16 522 8838</div>
+                    <div className="text-xs font-medium text-slate-500">
+                      Phone
+                    </div>
+                    <div className="text-sm font-semibold text-slate-800">
+                      +60 16 522 8838
+                    </div>
                   </div>
                 </a>
               </motion.div>
@@ -125,8 +147,12 @@ export default function About() {
               >
                 <FaBriefcase className="text-xl text-[#0f3d5c]" />
                 <div>
-                  <div className="text-xs font-medium text-slate-500">Open To</div>
-                  <div className="text-sm font-semibold text-slate-800">Full-time Roles</div>
+                  <div className="text-xs font-medium text-slate-500">
+                    Open To
+                  </div>
+                  <div className="text-sm font-semibold text-slate-800">
+                    Full-time Roles
+                  </div>
                 </div>
               </motion.div>
             </div>
@@ -143,13 +169,22 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1 }}
-            whileHover={{ y: -4, boxShadow: "0 16px 30px -14px rgba(15, 24, 40, 0.28)" }}
+            whileHover={{
+              y: -4,
+              boxShadow: "0 16px 30px -14px rgba(15, 24, 40, 0.28)",
+            }}
             className="panel relative p-6"
           >
-            <div className="mb-2 text-sm font-semibold text-[#0f3d5c]">{edu.period}</div>
-            <h4 className="mb-1 text-xl font-bold text-slate-900">{edu.institution}</h4>
+            <div className="mb-2 text-sm font-semibold text-[#0f3d5c]">
+              {edu.period}
+            </div>
+            <h4 className="mb-1 text-xl font-bold text-slate-900">
+              {edu.institution}
+            </h4>
             <div className="mb-3 font-medium text-slate-700">{edu.degree}</div>
-            <p className="whitespace-pre-line text-sm leading-relaxed text-slate-600">{edu.notes}</p>
+            <p className="whitespace-pre-line text-sm leading-relaxed text-slate-600">
+              {edu.notes}
+            </p>
           </motion.div>
         ))}
       </div>

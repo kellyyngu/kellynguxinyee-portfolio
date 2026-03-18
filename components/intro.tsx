@@ -39,7 +39,9 @@ export default function Intro() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15 }}
               >
-                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">Portfolio</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-slate-500">
+                  Portfolio
+                </p>
                 <h1 className="display-heading mt-2 text-4xl leading-tight text-slate-900 sm:text-5xl">
                   Kelly Ngu Xin Yee
                 </h1>
@@ -54,9 +56,15 @@ export default function Intro() {
                 transition={{ delay: 0.25 }}
                 className="muted-text mt-6 max-w-2xl text-base leading-relaxed sm:text-lg"
               >
-                Final-year Computer Science with AI student from Malaysia, focused on full-stack products,
-                machine learning, and research-driven development. I enjoy building dependable digital
-                experiences with thoughtful UX, strong engineering fundamentals, and real-world impact.
+                I am a final-year computer science student passionate about
+                building software that makes a tangible, positive impact on
+                society. I have strong interests in web and mobile development,
+                machine learning, and AI. I spend my free time exploring new
+                technologies to see how emerging tech can solve real-world
+                problems. I am always eager to tackle complex technical
+                challenges, and I am happy to connect with industry
+                professionals to find a team where I can contribute, learn, and
+                grow.
               </motion.p>
 
               <motion.div
