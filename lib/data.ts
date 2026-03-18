@@ -139,7 +139,7 @@ export const educationData = [
     degree: "BSc (Hons) Computer Science with AI",
     period: "Sept 2023 – June 2024 & Sept 2025 – June 2026",
     notes:
-      "First Year Grade: First Class Honours \nRelevant modules include Programming Paradigms, Databases and Interfaces, Fundamentals of Artificial Intelligence.",
+      "First Year Grade: First Class Honours \nRelevant modules: Machine Learning, Autonomous Robotic Systems, Designing Intelligent Agents, Programming Paradigms, Databases and Interfaces, Fundamentals of Artificial Intelligence.",
   },
   {
     institution: "University of Nottingham, United Kingdom",
@@ -168,12 +168,7 @@ export const projectsData = [
     title: "Monie Fest 2026 Website",
     description:
       "Developed a responsive event website for Monie Fest, a large-scale financial lifestyle festival focused on money, investing, and banking, attracting 25,000–30,000 attendees. Built as an individual contractor for Foodie Media and Spire Digital using React, TypeScript, and Vite with Tailwind CSS for styling. The site features event information, speaker profiles, exhibitor listings, programme schedule, event statistics, and integrated Eventbrite ticketing. Fully optimized for mobile and desktop viewing with accessible UI components.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Vite",
-      "Tailwind CSS",
-    ],
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     imageUrl: moniefest,
     link: "https://www.monie.my/",
   },
@@ -196,12 +191,7 @@ export const projectsData = [
     title: "Alice in Wonderland — Interactive Story Experience",
     description:
       "An interactive, narrated web adaptation of Lewis Carroll’s Alice that blends readable chapters, voice narration, and lightweight mini‑games to create an engaging, accessible storybook experience. Built as a single‑page React app with TypeScript and Vite, styled with Tailwind CSS, the project focuses on responsive design, progressive enhancement, optimized media delivery, and accessible UI components for all ages.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Vite",
-      "Tailwind CSS",
-    ],
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     imageUrl: aliceInWonderland,
     link: "https://kellyyngu.github.io/alice-in-wonderland/",
   },
@@ -309,12 +299,13 @@ export const categorizedSkills = {
     title: "Soft Skills",
     icon: "💡",
     skills: [
+      "Self-motivation",
+      "Adaptability",
+      "Time Management",
       "Communication",
       "Teamwork",
       "Problem-Solving",
       "Leadership",
-      "Time Management",
-      "Adaptability",
     ],
   },
   programmingLanguages: {

@@ -46,9 +46,6 @@ export default function Skills() {
             <div className="mb-6 flex items-center gap-3">
               <div className="h-2 w-2 rounded-full bg-[#0f3d5c]" />
               <h3 className="display-heading text-2xl text-slate-900">{category.title}</h3>
-              <span className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                {String(category.skills.length).padStart(2, "0")} Items
-              </span>
             </div>
 
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
