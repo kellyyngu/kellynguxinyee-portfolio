@@ -2,58 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-	--accent: #ffb89e;
-	--accent-600: #ff9b7a;
-	--muted: #f7f5f3;
-	--primary-900: #0f1724;
+:root {
+	--bg: #f4f4f2;
+	--surface: #fcfcfa;
+	--surface-strong: #ffffff;
+	--border: #e7e7df;
+	--text: #101828;
+	--muted-text: #525866;
+	--accent: #0f3d5c;
+	--accent-soft: #dce8f0;
 }
 
-html,body,#root{height:100%}
-
-body{
-  @apply bg-gradient-to-br from-[#fdfcfb] via-[#fffaf6] to-[#fef8f3] text-gray-900 antialiased;
+html,
+body,
+#root {
+	height: 100%;
 }
 
-/* Site container to keep consistent widths */
-.site-container{ @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl; }
-
-/* Card base used across the site */
-.card{ @apply bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden; }
-.card-body{ @apply p-6; }
-
-/* Hero / intro */
-.hero{ @apply bg-white/60 backdrop-blur-sm rounded-lg p-6 shadow-lg; }
-.hero-title{ @apply text-2xl sm:text-3xl font-semibold text-gray-900; }
-.hero-sub{ @apply mt-1 text-gray-600; }
-
-/* Buttons */
-.btn{ @apply inline-flex items-center justify-center rounded-md font-medium transition; }
-.btn-primary{ @apply btn bg-[#0f1724] text-white px-4 py-2 shadow hover:translate-y-[-1px] hover:shadow-lg; }
-.btn-outline{ @apply btn border border-gray-200 text-gray-800 px-4 py-2; }
-
-/* Nav links */
-nav a{ @apply transition-colors px-3 py-2 rounded-md; }
-nav a:hover{ color:rgb(15 23 36); }
-
-/* Forms */
-input[type="text"], input[type="email"], textarea, select{
-	@apply w-full border border-gray-200 rounded-md px-3 py-2 bg-white text-gray-800 transition-shadow focus:outline-none focus:ring-2 focus:ring-opacity-60;
-	--tw-ring-color: var(--accent-600);
+body {
+	@apply antialiased;
+	background:
+		radial-gradient(circle at 8% 8%, #ffffff 0%, transparent 32%),
+		radial-gradient(circle at 90% 14%, #edf3f8 0%, transparent 34%),
+		linear-gradient(180deg, #f7f7f4 0%, #f2f2ef 100%);
+	color: var(--text);
 }
-textarea{ @apply resize-y; }
 
-/* Section heading underline */
-.section-underline{ @apply w-16 h-1 bg-gray-200 rounded mt-3 mx-auto; }
+* {
+	border-color: var(--border);
+}
 
-/* Project / card hover */
-.card:hover{ transform: translateY(-4px); transition: transform .18s ease; }
+.display-heading {
+	font-family: var(--font-display), Georgia, serif;
+	letter-spacing: -0.02em;
+}
 
-/* small utilities */
-.muted{ @apply text-gray-500; }
-.label{ @apply text-sm font-medium text-gray-700; }
+.site-shell {
+	@apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
 
-/* Responsive tweaks for project images */
-img.object-cover{ object-fit: cover; }
+.panel {
+	@apply rounded-2xl border;
+	background-color: color-mix(in oklab, var(--surface-strong) 92%, #ffffff 8%);
+	box-shadow: 0 10px 34px rgba(16, 24, 40, 0.07);
+}
+
+.hairline {
+	@apply h-px w-full;
+	background: linear-gradient(90deg, transparent 0%, #d8d9ce 18%, #d8d9ce 82%, transparent 100%);
+}
+
+.muted-text {
+	color: var(--muted-text);
+}
+
+a {
+	@apply transition-colors;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+	@apply w-full rounded-xl border px-3 py-2.5 text-sm text-slate-800 outline-none transition;
+	background-color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+	box-shadow: 0 0 0 3px rgba(15, 61, 92, 0.15);
+	border-color: var(--accent);
+}
+
+textarea {
+	@apply resize-y;
+}
 
 

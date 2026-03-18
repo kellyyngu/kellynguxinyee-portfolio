@@ -14,6 +14,7 @@ import happyUFarm from "@/public/happyUFarm.png";
 import hangman from "@/public/hangman.png";
 import skyRushBird from "@/public/skyRushBird.png";
 import moniefest from "@/public/moniefest.png";
+import fyp from "@/public/fyp.png";
 
 export const links = [
   // navigation links for the header (use app routes)
@@ -45,8 +46,15 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Contract Full-Stack Developer – KL Foodie × Spire",
+    location: "Kuala Lumpur, Malaysia — Dec 2025 - Present",
+    description:
+      "Working with KL Foodie and Spire to develop monie.my, the official website for Monie Fest 2026, Malaysia’s largest financial festival at MITEC. The event features respected speakers, including Khairy Jamaludin, Dr. Ong Kian Ming, along with leading fintech and financial brands such as Webull, Moomoo, Luno, and other notable industry players.",
+    icon: React.createElement(CgWorkAlt),
+  },
+  {
     title: "Best Frontend Designer — Game Theory Challenge Hackathon (Tesserac AI)",
-    location: "Oct 2025 — Malaysia",
+    location: "Kuala Lumpur, Malaysia — Oct 2025",
     description:
       "Developed a responsive, user-centric 'Alice in Wonderland' web platform with quiz-based chapter progression, transforming classic literature into an engaging learning experience for new readers. Awarded Best Frontend Designer, selected as the top frontend project among participating universities in Malaysia for creativity, usability, and technical execution, winning RM1,500.",
     icon: React.createElement(CgWorkAlt),
@@ -161,13 +169,14 @@ export const projectsData = [
       "Developed a responsive event website for Monie Fest, a large-scale financial lifestyle festival focused on money, investing, and banking, attracting 25,000–30,000 attendees. Built as an individual contractor for Foodie Media and Spire Digital using React, TypeScript, and Vite with Tailwind CSS for styling. The site features event information, speaker profiles, exhibitor listings, programme schedule, event statistics, and integrated Eventbrite ticketing. Fully optimized for mobile and desktop viewing with accessible UI components.",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Responsive Design", "Eventbrite"],
     imageUrl: moniefest,
-    link: "https://kellyyngu.github.io/moniefest/",
+    link: "https://www.monie.my/",
   },
   {
     title: "AI-Driven Predictive Maintenance System (Ongoing)",
     description:
       "Developing a machine-learning based predictive maintenance system with physics-informed features and a web dashboard to anticipate machine failures and improve operational efficiency.",
     tags: ["Python", "scikit-learn", "TensorFlow", "Pandas", "Dash"],
+    imageUrl: fyp,
   },
   {
     title: "Personal Portfolio",

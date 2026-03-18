@@ -36,9 +36,8 @@ export default function Project({
       style={{ scale: scaleProgess, opacity: opacityProgess }}
       className="group mb-8"
     >
-      <section className="mx-auto max-w-5xl bg-white/90 backdrop-blur-sm shadow-lg hover:shadow-2xl rounded-2xl overflow-hidden border border-gray-100 hover:border-orange-200 transition-all duration-300">
+      <section className="panel mx-auto max-w-5xl overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl">
         <div className="flex flex-col md:flex-row">
-          {/* Image Section */}
           <div className="w-full md:w-2/5 relative overflow-hidden">
             {imageUrl ? (
               <div className="relative h-64 md:h-full group">
@@ -48,31 +47,29 @@ export default function Project({
                   quality={90}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
               </div>
             ) : (
-              <div className="w-full h-64 md:h-full bg-gradient-to-br from-orange-100 to-pink-100 flex items-center justify-center text-gray-400">
+              <div className="flex h-64 w-full items-center justify-center bg-[#ecf1f5] text-slate-500 md:h-full">
                 <div className="text-center">
-                  <div className="text-4xl mb-2">🖼️</div>
-                  <div className="text-sm">No image</div>
+                  <div className="mb-2 text-4xl">IMG</div>
+                  <div className="text-sm uppercase tracking-widest">No preview</div>
                 </div>
               </div>
             )}
           </div>
 
-          {/* Content Section */}
           <div className="w-full md:w-3/5 p-5 sm:p-8 relative">
-            {/* Title and Link */}
             <div className="flex items-start justify-between gap-3 sm:gap-4 mb-3 sm:mb-4">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
+              <h3 className="display-heading text-2xl text-slate-900 sm:text-[1.9rem]">
                 {title}
               </h3>
               {link && (
-                <a 
-                  href={link} 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="flex-shrink-0 p-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white rounded-lg hover:scale-110 transition-transform shadow-md"
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex-shrink-0 rounded-lg border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:shadow"
                   title="View live project"
                 >
                   <FiExternalLink className="text-xl" />
@@ -80,15 +77,16 @@ export default function Project({
               )}
             </div>
 
-            {/* Description */}
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              {isExpanded ? description : `${description.substring(0, maxDescriptionLength)}${description.length > maxDescriptionLength ? '...' : ''}`}
+            <p className="muted-text text-sm leading-relaxed sm:text-base">
+              {isExpanded
+                ? description
+                : `${description.substring(0, maxDescriptionLength)}${description.length > maxDescriptionLength ? "..." : ""}`}
             </p>
 
             {description.length > maxDescriptionLength && (
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-orange-600 hover:text-orange-700 transition-colors"
+                className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-[#0f3d5c] transition-colors hover:text-[#0c2f48]"
               >
                 {isExpanded ? (
                   <>
@@ -102,7 +100,6 @@ export default function Project({
               </button>
             )}
 
-            {/* Tags */}
             <div className="mt-6">
               <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
@@ -112,16 +109,13 @@ export default function Project({
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.05 }}
-                    className="text-xs font-medium bg-gradient-to-r from-orange-100 to-pink-100 text-gray-800 px-3 py-1.5 rounded-full border border-orange-200 hover:shadow-md transition-shadow"
+                    className="rounded-full border border-[#d8dee6] bg-[#f1f5f8] px-3 py-1.5 text-xs font-medium text-slate-700"
                   >
                     {tag}
                   </motion.span>
                 ))}
               </div>
             </div>
-
-            {/* Decorative corner */}
-            <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-tl from-orange-100/30 to-transparent rounded-tl-full"></div>
           </div>
         </div>
       </section>

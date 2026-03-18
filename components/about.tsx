@@ -22,115 +22,111 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
 
-      {/* Main About Card */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="relative bg-gradient-to-br from-white to-orange-50/30 rounded-2xl shadow-xl p-8 mb-12 border border-orange-100"
+        className="panel mb-12 p-8"
       >
-        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-orange-200/40 to-transparent rounded-tr-2xl"></div>
-        
         <div className="md:flex md:gap-8 items-start relative">
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             className="mb-6 md:mb-0 flex justify-center md:block"
           >
             <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full blur opacity-50"></div>
+              <div className="absolute -inset-2 rounded-full bg-[#d6e5ef] blur" />
               <Image 
                 src="/kelly.jpeg" 
                 alt="Kelly" 
                 width={160} 
                 height={160} 
-                className="relative rounded-full object-cover shadow-lg ring-4 ring-white" 
+                className="relative rounded-full object-cover ring-4 ring-white shadow-lg" 
               />
             </div>
           </motion.div>
           
           <div className="flex-1">
-            <motion.h3 
+            <motion.h3
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-pink-600 bg-clip-text text-transparent mb-4"
+              className="display-heading mb-4 text-3xl text-slate-900"
             >
-              Hi, I'm Kelly! 👋
+              Hi, I am Kelly
             </motion.h3>
-            
-            <motion.p 
+
+            <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-gray-700 leading-relaxed text-lg mb-6"
+              className="muted-text mb-6 text-lg leading-relaxed"
             >
-              A passionate <span className="font-semibold text-orange-600">Computer Science with AI</span> student at the University of Nottingham. 
-              My interests span <span className="font-semibold text-pink-600">web development, robotics, AI, and machine learning</span>. 
-              I'm driven by creating solutions that make a positive impact and am constantly seeking opportunities to learn, grow, and collaborate on innovative projects.
+              I am a Computer Science with AI student at the University of Nottingham with strong interests in
+              product engineering, machine learning, and human-centered design. I value well-structured systems,
+              clean implementation, and collaboration that turns ideas into practical solutions.
             </motion.p>
 
-            {/* Info Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm"
+                className="flex items-center gap-3 rounded-xl border border-[#e5e8e2] bg-white p-3"
               >
-                <FaMapMarkerAlt className="text-orange-500 text-xl" />
+                <FaMapMarkerAlt className="text-xl text-[#0f3d5c]" />
                 <div>
-                  <div className="text-xs text-gray-500 font-medium">Location</div>
-                  <div className="text-sm font-semibold text-gray-800">Malaysia</div>
+                  <div className="text-xs font-medium text-slate-500">Location</div>
+                  <div className="text-sm font-semibold text-slate-800">Malaysia</div>
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm"
+                className="flex items-center gap-3 rounded-xl border border-[#e5e8e2] bg-white p-3"
               >
-                <FaEnvelope className="text-pink-500 text-xl" />
+                <FaEnvelope className="text-xl text-[#0f3d5c]" />
                 <div>
-                  <div className="text-xs text-gray-500 font-medium">Email</div>
-                  <div className="text-sm font-semibold text-gray-800">kellynxy8838@gmail.com</div>
+                  <div className="text-xs font-medium text-slate-500">Email</div>
+                  <div className="text-sm font-semibold text-slate-800">kellynxy8838@gmail.com</div>
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
               >
-                <a 
+                <a
                   href="tel:+60165228838"
-                  className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm hover:shadow-md hover:border-purple-200 border border-transparent transition-all group cursor-pointer"
+                  className="group flex cursor-pointer items-center gap-3 rounded-xl border border-[#e5e8e2] bg-white p-3 transition hover:border-[#0f3d5c]/30"
                 >
-                  <FaPhone className="text-purple-500 text-xl group-hover:scale-110 transition-transform" />
+                  <FaPhone className="text-xl text-[#0f3d5c] transition-transform group-hover:scale-110" />
                   <div>
-                    <div className="text-xs text-gray-500 font-medium">Phone</div>
-                    <div className="text-sm font-semibold text-gray-800 group-hover:text-purple-600 transition-colors">+60 16 522 8838</div>
+                    <div className="text-xs font-medium text-slate-500">Phone</div>
+                    <div className="text-sm font-semibold text-slate-800">+60 16 522 8838</div>
                   </div>
                 </a>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 }}
-                className="flex items-center gap-3 p-3 bg-white rounded-lg shadow-sm"
+                className="flex items-center gap-3 rounded-xl border border-[#e5e8e2] bg-white p-3"
               >
-                <FaBriefcase className="text-blue-500 text-xl" />
+                <FaBriefcase className="text-xl text-[#0f3d5c]" />
                 <div>
-                  <div className="text-xs text-gray-500 font-medium">Open To</div>
-                  <div className="text-sm font-semibold text-gray-800">Full-time</div>
+                  <div className="text-xs font-medium text-slate-500">Open To</div>
+                  <div className="text-sm font-semibold text-slate-800">Full-time Roles</div>
                 </div>
               </motion.div>
             </div>
@@ -138,29 +134,22 @@ export default function About() {
         </div>
       </motion.div>
 
-      {/* Education Section */}
       <SectionHeading>Education</SectionHeading>
       <div className="grid md:grid-cols-2 gap-6 mt-8">
         {educationData.map((edu, idx) => (
-          <motion.div 
+          <motion.div
             key={idx}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1 }}
-            whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
-            className="relative p-6 bg-white rounded-xl shadow-lg border border-gray-100 hover:border-orange-200 transition-all group"
+            whileHover={{ y: -4, boxShadow: "0 16px 30px -14px rgba(15, 24, 40, 0.28)" }}
+            className="panel relative p-6"
           >
-            {/* Gradient accent */}
-            <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-orange-400 via-pink-400 to-purple-400 rounded-l-xl"></div>
-            
-            <div className="text-sm font-semibold text-orange-600 mb-2">{edu.period}</div>
-            <h4 className="text-xl font-bold text-gray-900 mb-1 group-hover:text-orange-600 transition-colors">{edu.institution}</h4>
-            <div className="text-gray-700 font-medium mb-3">{edu.degree}</div>
-            <p className="text-sm text-gray-600 leading-relaxed whitespace-pre-line">{edu.notes}</p>
-            
-            {/* Corner decoration */}
-            <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-orange-100/50 to-transparent rounded-br-xl"></div>
+            <div className="mb-2 text-sm font-semibold text-[#0f3d5c]">{edu.period}</div>
+            <h4 className="mb-1 text-xl font-bold text-slate-900">{edu.institution}</h4>
+            <div className="mb-3 font-medium text-slate-700">{edu.degree}</div>
+            <p className="whitespace-pre-line text-sm leading-relaxed text-slate-600">{edu.notes}</p>
           </motion.div>
         ))}
       </div>

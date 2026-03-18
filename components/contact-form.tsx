@@ -17,25 +17,54 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="mt-4 space-y-3">
       <div>
-        <label className="block text-sm text-gray-600">Name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} className="mt-1 w-full border border-gray-200 rounded px-3 py-2" placeholder="Your name" />
+        <label className="block text-sm font-medium text-slate-600">Name</label>
+        <input
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="mt-1"
+          placeholder="Your name"
+        />
       </div>
 
       <div>
-        <label className="block text-sm text-gray-600">Email</label>
-        <input value={email} onChange={(e) => setEmail(e.target.value)} className="mt-1 w-full border border-gray-200 rounded px-3 py-2" placeholder="you@example.com" />
+        <label className="block text-sm font-medium text-slate-600">Email</label>
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="mt-1"
+          placeholder="you@example.com"
+        />
       </div>
 
       <div>
-        <label className="block text-sm text-gray-600">Message</label>
-        <textarea value={message} onChange={(e) => setMessage(e.target.value)} rows={5} className="mt-1 w-full border border-gray-200 rounded px-3 py-2" placeholder="Write your message..." />
+        <label className="block text-sm font-medium text-slate-600">Message</label>
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          rows={5}
+          className="mt-1"
+          placeholder="Write your message..."
+        />
       </div>
 
-      <div className="flex items-center gap-2">
-        <button type="submit" className="inline-flex items-center px-4 py-2 bg-gray-900 text-white rounded-md text-sm">
+      <div className="flex items-center gap-3 pt-1">
+        <button
+          type="submit"
+          className="inline-flex items-center rounded-lg bg-[#0f3d5c] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#0d334d]"
+        >
           Send Message
         </button>
-        <button type="button" onClick={() => { setName(""); setEmail(""); setMessage(""); }} className="text-sm text-gray-600">Clear</button>
+        <button
+          type="button"
+          onClick={() => {
+            setName("");
+            setEmail("");
+            setMessage("");
+          }}
+          className="text-sm font-medium text-slate-600 transition hover:text-slate-800"
+        >
+          Clear
+        </button>
       </div>
     </form>
   );

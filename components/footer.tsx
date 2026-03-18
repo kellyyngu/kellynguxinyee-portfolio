@@ -2,9 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mt-12 px-4 text-center text-gray-500">
-      <div className="mx-auto max-w-4xl py-6">
-        <small className="mb-2 block text-sm">&copy; 2026 Kelly Ngu Xin Yee</small>
+    <footer className="mt-1 px-4 text-slate-500">
+      <div className="mx-auto max-w-5xl py-8">
+        <div className="hairline mb-2" />
+        <small className="mb-2 block text-sm tracking-wide">&copy; 2026 Kelly Ngu Xin Yee</small>
       </div>
     </footer>
   );
