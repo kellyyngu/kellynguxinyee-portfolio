@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Contract Full-Stack Developer – KL Foodie × Spire",
     location: "Kuala Lumpur, Malaysia — Dec 2025 - Present",
     description:
-      "Working with KL Foodie and Spire to develop monie.my, the official website for Monie Fest 2026, Malaysia’s largest financial festival at MITEC. The event features respected speakers, including Khairy Jamaludin, Dr. Ong Kian Ming, along with leading fintech and financial brands such as Webull, Moomoo, Luno, and other notable industry players.",
+      "Contracted by KL Foodie to independently develop monie.my for Monie Fest 2026 at MITEC, Malaysia’s largest financial festival. The event features respected speakers, including Khairy Jamaludin, Dr. Ong Kian Ming, along with leading fintech and financial brands such as Webull, Moomoo, Luno, and other notable industry players.",
     icon: React.createElement(CgWorkAlt),
   },
   {
