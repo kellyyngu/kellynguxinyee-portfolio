@@ -197,7 +197,7 @@ export const projectsData = [
   {
     title: "Alice in Wonderland — Interactive Story Experience",
     description:
-      "An interactive, narrated web adaptation of Lewis Carroll’s Alice that blends readable chapters, voice narration, and lightweight mini‑games to create an engaging, accessible storybook experience. Built as a single‑page React app with TypeScript and Vite, styled with Tailwind CSS, the project focuses on responsive design, progressive enhancement (works offline via built assets), optimized media delivery, and accessible UI components for all ages.",
+      "An interactive, narrated web adaptation of Lewis Carroll’s Alice that blends readable chapters, voice narration, and lightweight mini‑games to create an engaging, accessible storybook experience. Built as a single‑page React app with TypeScript and Vite, styled with Tailwind CSS, the project focuses on responsive design, progressive enhancement, optimized media delivery, and accessible UI components for all ages.",
     tags: [
       "React",
       "TypeScript",
