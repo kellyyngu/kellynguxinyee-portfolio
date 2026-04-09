@@ -49,7 +49,7 @@ export const experiencesData = [
     title: "Contract Full-Stack Developer – KL Foodie × Spire",
     location: "Kuala Lumpur, Malaysia — Dec 2025 - Present",
     description:
-      "Contracted by KL Foodie to independently develop monie.my for Monie Fest 2026 at MITEC, Malaysia’s largest financial festival. The event features respected speakers, including Khairy Jamaludin, Dr. Ong Kian Ming, along with leading fintech and financial brands such as Webull, Moomoo, Luno, and other notable industry players.",
+      "Contracted by KL Foodie to independently develop monie.my for Monie Fest 2026 at MITEC, Malaysia’s largest financial festival.",
     icon: React.createElement(CgWorkAlt),
   },
   {
@@ -61,7 +61,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
   },
   {
-    title: "R&D Intern — ERI Division (RISA Security Robot Project)",
+    title: "R&D Intern — Emerging Robotics Innovation Division",
     location: "Sarawak Energy, July 2025 – Sept 2025",
     description:
       "Developed a live map feature to display the robot's real-time location and patrol routes, enabling effective monitoring and incident response. Built a real-time dashboard to monitor detected individuals and flag suspicious activity, supporting timely security decisions. Collaborated closely with the ERI division and proactively supported team members to ensure smooth project execution.",
@@ -167,7 +167,7 @@ export const projectsData = [
   {
     title: "Monie Fest 2026 Website",
     description:
-      "Developed a responsive event website for Monie Fest, a large-scale financial lifestyle festival focused on money, investing, and banking, attracting 25,000–30,000 attendees. Built as an individual contractor for Foodie Media and Spire Digital using React, TypeScript, and Vite with Tailwind CSS for styling. The site features event information, speaker profiles, exhibitor listings, programme schedule, event statistics, and integrated Eventbrite ticketing. Fully optimized for mobile and desktop viewing with accessible UI components.",
+      "Developed a responsive event website for Monie Fest, a large-scale financial lifestyle festival focused on money, investing, and banking. Built as an individual contractor for Foodie Media and Spire Digital using React, TypeScript, and Vite with Tailwind CSS for styling. The site features event information, speaker profiles, exhibitor listings, programme schedule, and integrated Eventbrite ticketing. Fully optimized for mobile and desktop viewing with accessible UI components.",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     imageUrl: moniefest,
     link: "https://www.monie.my/",
