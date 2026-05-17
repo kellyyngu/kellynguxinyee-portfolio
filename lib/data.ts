@@ -170,7 +170,7 @@ export const projectsData = [
       "Developed a responsive event website for Monie Fest, a large-scale financial lifestyle festival focused on money, investing, and banking. Built as an individual contractor for Foodie Media and Spire Digital using React, TypeScript, and Vite with Tailwind CSS for styling. The site features event information, speaker profiles, exhibitor listings, programme schedule, and integrated Eventbrite ticketing. Fully optimized for mobile and desktop viewing with accessible UI components.",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
     imageUrl: moniefest,
-    link: "https://www.monie.my/",
+    link: "https://kellyyngu.github.io/moniefest-comingsoon/",
   },
   {
     title: "AI-Driven Predictive Maintenance System (Ongoing)",
